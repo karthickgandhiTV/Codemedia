@@ -1,0 +1,12 @@
+{
+  "AppSyncApiName": "codemedia",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthModeLastUpdated": "2024-08-11T10:44:27.785Z",
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authcodemedia5d4741c1",
+      "Outputs.UserPoolId"
+    ]
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-codemedia-codemedia-f2c92-authRole",
+      "UnauthRoleArn": "arn:aws:iam::058264491840:role/amplify-codemedia-codemedia-f2c92-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::058264491840:role/amplify-codemedia-codemedia-f2c92-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-codemedia-codemedia-f2c92-deployment",
+      "UnauthRoleName": "amplify-codemedia-codemedia-f2c92-unauthRole",
+      "StackName": "amplify-codemedia-codemedia-f2c92",
+      "StackId": "arn:aws:cloudformation:us-east-1:058264491840:stack/amplify-codemedia-codemedia-f2c92/6ec69c40-571e-11ef-bdae-12aa457f884d",
+      "AmplifyAppId": "d2dbsqjozkj09d"
+    }
+  },
+  "api": {
+    "codemedia": {
+      "dependsOn": [
+        {
+          "category": "auth",
+          "resourceName": "codemedia5d4741c1",
+          "attributes": [
+            "UserPoolId"
+          ]
+        }
+      ],
+      "output": {
+        "authConfig": {
+          "additionalAuthenticationProviders": [
+            {
+              "authenticationType": "AMAZON_COGNITO_USER_POOLS",
+              "userPoolConfig": {
+                "userPoolId": "authcodemedia5d4741c1"
+              }
+            }
+          ],
+          "defaultAuthentication": {
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 365,
+              "apiKeyExpirationDate": "2025-08-11T10:44:19.797Z",
+              "description": "public api key"
+            }
+          }
+        },
+        "GraphQLAPIIdOutput": "xvzjgg4g55e7zonbtqjdeikvwu",
+        "GraphQLAPIEndpointOutput": "https://3ttim2pfcnb2pohreot27dyiy4.appsync-api.us-east-1.amazonaws.com/graphql",
+        "GraphQLAPIKeyOutput": "da2-xj7fakh6hrgqxgm2liikds6vx4"
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "AppSync",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-codemedia-codemedia-f2c92-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apicodemedia"
+      },
+      "lastPushTimeStamp": "2024-08-12T09:45:10.079Z",
+      "lastPushDirHash": "YCY2MJFcwGGNIZxLWTDvAo57RXY="
+    }
+  },
+  "auth": {
+    "codemedia5d4741c1": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-codemedia-codemedia-f2c92-deployment/amplify-cfn-templates/auth/codemedia5d4741c1-cloudformation-template.json",
+        "logicalId": "authcodemedia5d4741c1"
+      },
+      "lastPushTimeStamp": "2024-08-12T09:45:10.090Z",
+      "output": {
+        "UserPoolId": "us-east-1_1FWejtgYS",
+        "AppClientIDWeb": "cvrm5uc36b931tqrrojlql1of",
+        "AppClientID": "2hslmqhucmd9bnl5onfm9ifboq",
+        "IdentityPoolId": "us-east-1:22cedf6a-92ff-44f8-a656-152360e32bd8",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-1:058264491840:userpool/us-east-1_1FWejtgYS",
+        "IdentityPoolName": "codemedia5d4741c1_identitypool_5d4741c1__codemedia",
+        "UserPoolName": "codemedia5d4741c1_userpool_5d4741c1"
+      },
+      "lastPushDirHash": "Wwd5ySxzn/MUywROQtx9IG1QYAw="
+    }
+  },
+  "storage": {
+    "codemedias3bucket": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "lastPushTimeStamp": "2024-08-12T09:45:10.099Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-codemedia-codemedia-f2c92-deployment/amplify-cfn-templates/storage/cloudformation-template.json",
+        "logicalId": "storagecodemedias3bucket"
+      },
+      "output": {
+        "BucketName": "codemedia0b154b38f2c64f76bf4fd9697f67604bf2c92-codemedia",
+        "Region": "us-east-1"
+      },
+      "lastPushDirHash": "2kclFlJZFGvIWVnHTM7Z7Cv62aY="
+    }
+  },
+  "hosting": {
+    "amplifyhosting": {
+      "service": "amplifyhosting",
+      "providerPlugin": "awscloudformation",
+      "type": "manual",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-codemedia-codemedia-f2c92-deployment/amplify-cfn-templates/hosting/amplifyhosting-template.json",
+        "logicalId": "hostingamplifyhosting"
+      },
+      "lastPushTimeStamp": "2024-08-12T09:45:11.171Z",
+      "output": {},
+      "lastPushDirHash": "/RaW9SVMoTzmziIXLbCSnhEpCgk="
+    }
+  }
+}

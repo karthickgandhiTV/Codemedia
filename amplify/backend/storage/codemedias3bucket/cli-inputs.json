@@ -1,0 +1,16 @@
+{
+  "resourceName": "codemedias3bucket",
+  "policyUUID": "8f45c617",
+  "bucketName": "codemedia0b154b38f2c64f76bf4fd9697f67604b",
+  "storageAccess": "authAndGuest",
+  "guestAccess": [
+    "READ"
+  ],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}

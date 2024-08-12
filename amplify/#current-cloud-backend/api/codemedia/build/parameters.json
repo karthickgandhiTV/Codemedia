@@ -1,0 +1,13 @@
+{
+    "AppSyncApiName": "codemedia",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": false,
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authcodemedia5d4741c1",
+            "Outputs.UserPoolId"
+        ]
+    },
+    "S3DeploymentBucket": "amplify-codemedia-codemedia-f2c92-deployment",
+    "S3DeploymentRootKey": "amplify-appsync-files/fe9eb30c8841d9a8e8943099b0968026f2a620ec"
+}

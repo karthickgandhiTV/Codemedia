@@ -1,0 +1,53 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-codemedia-dev-3b065-authRole",
+      "UnauthRoleArn": "arn:aws:iam::058264491840:role/amplify-codemedia-dev-3b065-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::058264491840:role/amplify-codemedia-dev-3b065-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-codemedia-dev-3b065-deployment",
+      "UnauthRoleName": "amplify-codemedia-dev-3b065-unauthRole",
+      "StackName": "amplify-codemedia-dev-3b065",
+      "StackId": "arn:aws:cloudformation:us-east-1:058264491840:stack/amplify-codemedia-dev-3b065/44d98610-56f4-11ef-9732-0afffef4d3df",
+      "AmplifyAppId": "d2dbsqjozkj09d"
+    },
+    "categories": {
+      "api": {
+        "codemedia": {}
+      },
+      "auth": {
+        "codemediaa9846141": {}
+      }
+    }
+  },
+  "codemedia": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-codemedia-codemedia-f2c92-authRole",
+      "UnauthRoleArn": "arn:aws:iam::058264491840:role/amplify-codemedia-codemedia-f2c92-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::058264491840:role/amplify-codemedia-codemedia-f2c92-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-codemedia-codemedia-f2c92-deployment",
+      "UnauthRoleName": "amplify-codemedia-codemedia-f2c92-unauthRole",
+      "StackName": "amplify-codemedia-codemedia-f2c92",
+      "StackId": "arn:aws:cloudformation:us-east-1:058264491840:stack/amplify-codemedia-codemedia-f2c92/6ec69c40-571e-11ef-bdae-12aa457f884d",
+      "AmplifyAppId": "d2dbsqjozkj09d"
+    },
+    "categories": {
+      "api": {
+        "codemedia": {}
+      },
+      "auth": {
+        "codemedia5d4741c1": {}
+      },
+      "storage": {
+        "codemedias3bucket": {}
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d2dbsqjozkj09d",
+          "type": "manual"
+        }
+      }
+    }
+  }
+}
